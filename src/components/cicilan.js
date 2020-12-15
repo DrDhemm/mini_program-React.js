@@ -94,7 +94,7 @@ function Cicilan() {
                       name="nominal"
                       placeholder="Masukkan nominal tanpa titik"
                       title="Masukkan nominal tanpa titik"
-                      min="1"
+                      min="100"
                       className="d-inline-block custom-input"
                       required
                       onChange={() =>

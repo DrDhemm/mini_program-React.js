@@ -6,6 +6,25 @@
   border-radius: 0.45rem;
 }
 
+.tooltip {
+  margin-left: 1em;
+
+  &.show {
+    opacity: 1;
+  }
+  
+  .tooltip-inner {
+    border: .2px rgb(72, 72, 216) solid;
+    box-shadow: 0px 0px 8px 2px rgba(72, 72, 216, 0.35);
+    border-radius: 0.45rem;
+    background-color: #dbdbdba9;
+    backdrop-filter: blur(7px);
+    text-align: left;
+    padding: 1em 1em 1em 1.3em;
+    color: rgb(44, 44, 44);
+  }
+}
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -98,6 +117,17 @@ body {
 
       svg {
         vertical-align: text-top;
+      }
+
+      .custom-info-mini {
+        color: #a3a3a3;
+        cursor: help;
+        transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+          border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+        &:hover {
+          color: #4848d8;
+        }
       }
     }
   }
