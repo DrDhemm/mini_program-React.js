@@ -113,19 +113,26 @@ body {
       width: 334.8px;
 
       .custom-p-mini {
-        @include font-size(.95rem);
+        @include font-size(0.95rem);
         font-family: "Work Sans", sans-serif;
         font-weight: 400;
       }
-    }
-  }
-}
 
-.custom-bmi {
-  .custom-input-bmi {
-    width: 80%;
-  }
-  .custom-unit-bmi {
-    width: 20%;
+      .custom-input {
+        width: 80%;
+
+        &.input-01 {
+          width: 70%;
+        }
+      }
+
+      .custom-unit {
+        width: 20%;
+
+        &.unit-01 {
+          width: 30%;
+        }
+      }
+    }
   }
 }

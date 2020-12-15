@@ -14,6 +14,7 @@ const CustomContainer = styled(Container)`
 
 const ButtonWrapper = styled.div`
   height: 60px;
+  min-height: 60px;
   background-color: #cccccc;
 `;
 
@@ -25,6 +26,7 @@ const CustomHouse = styled(House)`
 
 const Footer = styled.div`
   height: 30px;
+  min-height: 30px;
   background-color: #cccccc;
 
   p {

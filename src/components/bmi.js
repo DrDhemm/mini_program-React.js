@@ -18,13 +18,13 @@ function Bmi() {
   };
 
   const compute = (e) => {
-    console.log(data);
+    // console.log(data);
     e.preventDefault();
     var berat = parseInt(data.berat);
     var tinggi = parseInt(data.tinggi);
     berat = convert(berat).from(data.unitBerat.toLowerCase()).to("kg");
     tinggi = convert(tinggi).from(data.unitTinggi.toLowerCase()).to("m");
-    console.log(berat, tinggi);
+    // console.log(berat, tinggi);
     var hasil = berat / (tinggi * tinggi);
     hasil = hasil.toFixed(1);
 
@@ -57,7 +57,7 @@ function Bmi() {
             </h1>
           </div>
           <div className="d-flex custom-program-mini align-items-center justify-content-center">
-            <div className="custom-card-mini custom-bmi">
+            <div className="custom-card-mini">
               <Form onSubmit={compute}>
                 <Form.Group controlId="formBeratBadan" className="mb-3">
                   <Form.Label>Berat Badan</Form.Label>
@@ -67,7 +67,7 @@ function Bmi() {
                       name="berat"
                       placeholder="Masukkan berat badan"
                       min="1"
-                      className="d-inline-block custom-input-bmi"
+                      className="d-inline-block custom-input"
                       required
                       step=".01"
                       onChange={() =>
@@ -77,7 +77,7 @@ function Bmi() {
                     <Form.Control
                       as="select"
                       name="unitBerat"
-                      className="d-inline-block custom-unit-bmi"
+                      className="d-inline-block custom-unit"
                       required
                       onChange={() =>
                         changeState(document.getElementsByName("unitBerat")[0])
@@ -96,7 +96,7 @@ function Bmi() {
                       placeholder="Masukkan tinggi badan"
                       min="1"
                       name="tinggi"
-                      className="d-inline-block custom-input-bmi"
+                      className="d-inline-block custom-input"
                       required
                       step=".01"
                       onChange={() =>
@@ -106,7 +106,7 @@ function Bmi() {
                     <Form.Control
                       as="select"
                       name="unitTinggi"
-                      className="d-inline-block custom-unit-bmi"
+                      className="d-inline-block custom-unit"
                       required
                       onChange={() =>
                         changeState(document.getElementsByName("unitTinggi")[0])
