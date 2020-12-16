@@ -163,7 +163,7 @@ function Ppn() {
                     </Form.Control>
                   </section>
                 </Form.Group>
-                <Button variant="primary" type="submit" className="mb-3">
+                <Button variant="primary" type="submit" className="mb-3 custom-button-mini">
                   Compute result
                 </Button>
               </Form>
